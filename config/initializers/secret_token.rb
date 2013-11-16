@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-FoodForest::Application.config.secret_key_base = 'd1a8cfd44260a24583e7cbda046a84f1231fd8f3aa5a4b50e39d1083851673307d763cee3040148a2182c845611936a5b1e833815dfc8106259cabedc1842db2'
+FoodForest::Application.config.secret_key_base = 'b9c11a1c76684c12d5d4fa7385d7a485719f23505e92ca3778e41abedd4176ca7cae11e64ac4d0b3106d5f1196d193dac5ccf9c58bd70cc0c893f65625713306'

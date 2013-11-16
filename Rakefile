@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FoodForest::Application.load_tasks
+RailsSkeleton::Application.load_tasks

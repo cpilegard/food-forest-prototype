@@ -1,0 +1,5 @@
+-if @errors
+  .login_errors
+    - @errors.each do |error|
+      %p.error
+        = error
