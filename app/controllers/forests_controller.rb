@@ -4,7 +4,7 @@ class ForestsController < ApplicationController
   end
 
   def show
-
+    @name = Forest.find(params[:id]).name
   end
 
   def create
