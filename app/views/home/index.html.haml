@@ -1,11 +1,15 @@
 =content_for :title, "FoodForest"
 
-%h1
-  Welcome to Food Forest
+%video#video{ :autoplay => true, :loop => true, :src => "/assets/food_forest.mp4", :width => "100%",  :height => "100%"}
+
+%section.home_container
+
+  %h1
+    Welcome to Food Forest
 
 
-= form_tag('/search') do
-  = text_field_tag :location, nil, :placeholder => "Enter Your Location"
-  = submit_tag "Search"
+  = form_tag('/search') do
+    = text_field_tag :location, nil, :placeholder => "Enter Your Location"
+    = submit_tag "Search"
 
-= link_to "Create Forest", new_forest_path
+  = link_to "Create Forest", new_forest_path
