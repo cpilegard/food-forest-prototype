@@ -1,10 +1,9 @@
 class User < ActiveRecord::Base
   has_secure_password
 
-
+  has_and_belongs_to_many :forests
   has_many :resources
   has_many :plots
-  belongs_to :forest
 
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
