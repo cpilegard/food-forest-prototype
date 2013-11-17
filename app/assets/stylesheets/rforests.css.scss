@@ -1,0 +1,62 @@
+// Place all the styles related to the resources controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.task {
+  //background-color: #F5F5F5;
+  display: block;
+  width: 250px;
+  height: 95px;
+  margin-left: 10px;
+  float: left;
+}
+
+.task:hover {
+  background-color: white;
+}
+
+.unfulfilled {
+  background-color: #CEE6CE;
+}
+
+.unfulfilled:hover {
+  background-color: #B9CFB9;
+}
+
+.avatar {
+  padding-top: 12px;
+  float: right;
+}
+
+.image {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.help_button {
+  padding-top: 8px;
+  text-align: center;
+  clear: both;
+}
+
+.forest-title {
+  text-align:center;
+}
+
+.news-item {
+  padding-bottom: 8px;
+}
+
+.feed-text {
+  display: block;
+  float: right;
+  width: 70%;
+  color: white; 
+}
+
+.dirty {
+  padding-left: 50px;
+}
