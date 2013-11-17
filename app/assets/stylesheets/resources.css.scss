@@ -14,9 +14,37 @@ padding-left: 10px;
 ul {
   padding-left: 40px;
 }
+#video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
 
-#wrapper {
-  padding-top: 100px;
+#video_pattern {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.home_container {
+  width: 60%;
   padding-left: 20%;
-  width: 80%;
+}
+
+h1 {
+  color: white;
 }
