@@ -41,10 +41,40 @@ ul {
 }
 
 .home_container {
-  width: 60%;
-  padding-left: 20%;
+  margin: 0 auto;
+}
+
+
+#typing_text {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+
+  color: white;
+  display: block;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 40px;
+  margin: 0 auto 0px;
+  padding: 10px;
+  text-align: center;
+  width: 800px;
+  outline: none;
 }
 
 h1 {
   color: white;
 }
+
+*::-webkit-input-placeholder {
+    color: white;
+}
+
+*:-moz-placeholder {
+    color: white;
+}
+
+*:-ms-input-placeholder {
+    /* IE10+ */
+    color: white;
+}
+

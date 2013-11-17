@@ -13,14 +13,14 @@ var timer,
 
 function typingText() {
   if (clear) {
-    document.getElementById('typing_text').innerHTML = "";
+    document.getElementById('typing_text').placeholder = "";
     clear = false;
   }
 
 
   if (isTypingText) {
     if (currentChar < stringArray[index].length) {
-      document.getElementById('typing_text').innerHTML += stringArray[index].charAt(currentChar);
+      document.getElementById('typing_text').placeholder += stringArray[index].charAt(currentChar);
       currentChar++;
       timer = setTimeout('typingText()', 70);
     } else {

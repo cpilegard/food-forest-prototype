@@ -6,12 +6,7 @@
 
 %section.home_container
 
-  %p#typing_text
-
-
 
   = form_tag('/search', :method => 'get') do
-    = text_field_tag :location, nil, :placeholder => "Enter Your Location"
-    = submit_tag "Search"
+    = text_field_tag :location, nil, :id => 'typing_text'
 
-  = link_to "Create Forest", new_forest_path
