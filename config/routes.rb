@@ -13,4 +13,6 @@ FoodForest::Application.routes.draw do
   get 'auth/:provider/callback' => 'oauth#create'
   get 'auth/failure' => 'oauth#fail'
   get '/auth/facebook', as: 'facebook_oauth'
+
+  get '/search' => 'home#search'
 end
