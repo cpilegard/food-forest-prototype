@@ -1,6 +1,11 @@
 =content_for :title, "FoodForest"
 
 %h1
-  Hello from index
+  Welcome to Food Forest
+
+
+= form_tag('/search') do
+  = text_field_tag :location, nil, :placeholder => "Enter Your Location"
+  = submit_tag "Search"
 
 = link_to "Create Forest", new_forest_path
