@@ -20,16 +20,17 @@
 
   = stylesheet_link_tag "application", :media => 'all'
   = javascript_include_tag "vendor/custom.modernizr"
+  = javascript_include_tag "application"
   = csrf_meta_tag
 
 %body
 
   %body
-    #nav
-      = render :partial => 'shared/nav'
-    #flash
-      = render :partial => 'shared/flash'
+    - unless :root
+      #nav
+        = render :partial => 'shared/nav'
+      #flash
+        = render :partial => 'shared/flash'
     = yield
     #footer
 
-    = javascript_include_tag "application"
