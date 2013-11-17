@@ -25,10 +25,11 @@
 %body
 
   %body
-    #nav
-      = render :partial => 'shared/nav'
-    #flash
-      = render :partial => 'shared/flash'
+    - unless :root
+      #nav
+        = render :partial => 'shared/nav'
+      #flash
+        = render :partial => 'shared/flash'
     = yield
     #footer
 
