@@ -10,3 +10,9 @@
   = form_tag('/search', :method => 'get') do
     = text_field_tag :location, nil, :id => 'typing_text', :autocomplete => 'off'
 
+
+:javascript
+
+  $(document).ready(function() {
+    typingText();
+  });

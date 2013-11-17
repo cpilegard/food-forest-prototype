@@ -72,6 +72,7 @@
     <img class="image" src="http://www.gravatar.com/avatar/a39c3c996a65e17a19ec29c36914a313?s=40">
   </div>
 </div>
+
 <div class="panel unfulfilled task"><div>John's garden needs watering every Friday.</div>
 </div>
 <div class="panel unfulfilled task"><div>Monty's garden has corn available to harvest.</div>
@@ -84,3 +85,51 @@
 </div>
 </div>
 </div>
+
+
+
+
+
+<style>
+  .amount_text_fields {
+    width: 100px !important;
+    display: inline !important;
+  }
+
+  .modal_lables {
+    display: inline !important;
+  }
+</style>
+
+<a href="#" data-reveal-id="contribute_modal">Modal</a>
+
+<div id="contribute_modal" class="reveal-modal">
+  <a class="close-reveal-modal">&#215;</a>
+  <h2>What would you like to contribute?</h2>
+  <%= form_tag('/blah', :id => 'contribute_form') do %>
+      <%= check_box_tag 'land', 'land', nil %>
+      I have land
+      <%= text_field_tag 'land_amount', nil, :class => 'amount_text_fields' %>
+      <%= label_tag 'land_amount', 'sqft', :class => 'modal_lables' %>
+
+      <br>
+
+      <%= check_box_tag 'seeds', 'seeds', nil %>
+      I have seeds
+      <%= text_field_tag 'seed_amount', nil, :class => 'amount_text_fields' %>
+      <%= label_tag 'seed_amount', 'amount', :class => 'modal_lables' %>
+
+      <br>
+
+      <%= check_box_tag 'compost', 'compost', nil %>
+      I have compost
+      <%= text_field_tag 'compost_amount', nil, :class => 'amount_text_fields' %>
+      <%= label_tag 'compost_amount', 'lbs', :class => 'modal_lables' %>
+
+      <br>
+
+      <%= submit_tag 'Contribute', :class => 'button' %>
+    <% end %>
+</div>
+
+
