@@ -16,11 +16,6 @@ ActiveRecord::Schema.define(version: 20131117004709) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "forest_plots", force: true do |t|
-    t.integer "forest_id"
-    t.integer "plot_id"
-  end
-
   create_table "forests", force: true do |t|
     t.string   "name"
     t.string   "city"
@@ -33,7 +28,7 @@ ActiveRecord::Schema.define(version: 20131117004709) do
     t.integer "forest_id"
   end
 
-  create_table "plot_resources", force: true do |t|
+  create_table "needs", force: true do |t|
     t.boolean "fulfilled"
     t.integer "plot_id"
     t.integer "resource_id"
@@ -43,6 +38,7 @@ ActiveRecord::Schema.define(version: 20131117004709) do
     t.string   "city"
     t.integer  "size"
     t.integer  "forest_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
