@@ -14,6 +14,8 @@ class CreateUsers < ActiveRecord::Migration
       t.text :bio
       t.boolean :private
 
+      t.string :city
+
       t.timestamps
     end
 
