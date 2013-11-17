@@ -3,7 +3,7 @@ FoodForest::Application.routes.draw do
 
   resource :users
   resource :sessions, only: [:create]
-  resources :communities
+  resources :forests
 
   get '/signup' => 'users#new', as: 'signup'
   get '/login' => 'sessions#new', as: 'login'
