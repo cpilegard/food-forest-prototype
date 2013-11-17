@@ -6,13 +6,21 @@
   //background-color: #F5F5F5;
   display: block;
   width: 250px;
-  height: auto;
+  height: 95px;
   margin-left: 10px;
   float: left;
 }
 
+.task:hover {
+  background-color: white;
+}
+
 .unfulfilled {
   background-color: #CEE6CE;
+}
+
+.unfulfilled:hover {
+  background-color: #B9CFB9;
 }
 
 .avatar {
@@ -46,5 +54,9 @@
   display: block;
   float: right;
   width: 70%;
-  color: white;
+  color: white; 
+}
+
+.dirty {
+  padding-left: 50px;
 }
