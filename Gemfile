@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'haml-rails'
 gem 'omniauth-facebook'
+gem 'zurb-foundation', '~> 4.0.0'
 
 group :doc do
   gem 'sdoc', require: false
