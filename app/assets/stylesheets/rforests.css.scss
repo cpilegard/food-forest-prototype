@@ -2,13 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.panel {
+.task {
   //background-color: #F5F5F5;
   display: block;
   width: 250px;
-  height: 100px;
+  height: auto;
   margin-left: 10px;
   float: left;
+}
+
+.unfulfilled {
+  background-color: #CEE6CE;
 }
 
 .avatar {
@@ -16,8 +20,16 @@
   float: right;
 }
 
-img {
+.image {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.help_button {
+  padding-top: 8px;
+  text-align: center;
+  clear: both;
 }
