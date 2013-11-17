@@ -11,19 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116231704) do
+ActiveRecord::Schema.define(version: 20131117000508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "forest_plots", force: true do |t|
+    t.integer "forest_id"
+    t.integer "plot_id"
+  end
+
   create_table "forests", force: true do |t|
+    t.string   "name"
+    t.string   "city"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "plot_resources", force: true do |t|
+    t.boolean "fulfilled"
+    t.integer "plot_id"
+    t.integer "resource_id"
   end
 
   create_table "plots", force: true do |t|
     t.string   "city"
     t.integer  "size"
+    t.integer  "forest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -32,6 +46,11 @@ ActiveRecord::Schema.define(version: 20131116231704) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "user_resources", force: true do |t|
+    t.integer "user_id"
+    t.integer "resource_id"
   end
 
   create_table "users", force: true do |t|
@@ -47,6 +66,7 @@ ActiveRecord::Schema.define(version: 20131116231704) do
     t.date     "oath_expires_at"
     t.text     "bio"
     t.boolean  "private"
+    t.string   "city"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
