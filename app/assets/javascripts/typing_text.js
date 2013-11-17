@@ -1,7 +1,8 @@
 var stringArray = [];
 stringArray[0] = "Welcome To Food Forest";
-stringArray[1] = "Find A Forest Community Near You";
-stringArray[2] = "Enter Your location Here and Press Enter";
+stringArray[1] = "See what people around you are growing";
+stringArray[2] = "Help your neighbors, share the harvest";
+stringArray[3] = "Enter Your location Here and Press Enter";
 
 var timer,
     typingTextTimer,
