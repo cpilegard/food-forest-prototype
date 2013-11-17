@@ -9,3 +9,5 @@
 Resource.create(name: "seeds")
 Resource.create(name: "labor")
 Resource.create(name: "compost")
+
+Forest.create(name: "Inner Richmond", city: "San Francisco")
